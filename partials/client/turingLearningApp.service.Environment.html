@@ -1,0 +1,28 @@
+<h1><code ng:non-bindable="">Environment</code>
+<div><span class="hint">service in module <code ng:non-bindable="">turingLearningApp</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="turinglearningapp-service-page turinglearningapp-service-environment-page"><p>Service used to control the development environment which is also known as the editor. This service is used to receive changes in size experienced by the <a href="#/client/turingLearningApp.directive:developmentPlaceholder">developmentPlaceholder</a> and communicate the required size to the  <a href="#/client/turingLearningApp.directive:developmentEnvironment">developmentEnvironment</a></p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_set_environment_listener">set_environment_listener(_listener)</h3>
+<div class="set_environment_listener"><div class="set-environment-listener-page"><p>Defines the callback function to be called to notify the <a href="#/client/turingLearningApp.directive:developmentEnvironment">developmentEnvironment</a> that the environment has changed</p>
+</div><h5 id="methods_set_environment_listener_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>_listener</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="set-environment-listener-page"><p>Function to be called on environment change</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_update_size">update_size(width, height)</h3>
+<div class="update_size"><div class="update-size-page"><p>Updates the width and height of the environment and calls the listener function to notify the <a href="#/client/turingLearningApp.directive:developmentEnvironment">developmentEnvironment</a> that the size of the development environment has changed</p>
+</div><h5 id="methods_update_size_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>width</td><td><a href="" class="label type-hint type-hint-number">number</a></td><td><div class="update-size-page"><p>New width of the development environment</p>
+</div></td></tr><tr><td>height</td><td><a href="" class="label type-hint type-hint-number">number</a></td><td><div class="update-size-page"><p>New height of the development environment</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_update_source">update_source(source)</h3>
+<div class="update_source"><div class="update-source-page"><p>Updates the source of the environment and calls the listener function to notify the <a href="#/client/turingLearningApp.directive:developmentEnvironment">developmentEnvironment</a> that the source of the editor has changed</p>
+</div><h5 id="methods_update_source_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>source</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="update-source-page"><p>New url source of development environment</p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+</div>

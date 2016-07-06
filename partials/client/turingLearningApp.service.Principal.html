@@ -1,0 +1,71 @@
+<h1><code ng:non-bindable="">Principal</code>
+<div><span class="hint">service in module <code ng:non-bindable="">turingLearningApp</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="turinglearningapp-service-page turinglearningapp-service-principal-page"><p>The <code>Principal</code> service can be used to authorise a state change. It is assumes that user roles are ordered and that higher users can access routes for users with lower privileges.</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="https://docs.angularjs.org/api/ng/service/$q">$q</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="https://docs.angularjs.org/api/ng/service/$http">$http</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="https://docs.angularjs.org/api/ngCookies/service/$cookies">$cookies</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/client/turingLearningApp.service:User">User</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_createuser">createUser(user, callback)</h3>
+<div class="createuser"><div class="createuser-page"><p>Create a new user</p>
+</div><h5 id="methods_createuser_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>user</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="createuser-page"><p>user info</p>
+</div></td></tr><tr><td>callback <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="createuser-page"><p>user created callback</p>
+</div></td></tr></tbody></table><h5 id="methods_createuser_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">promise</a></td><td><div class="createuser-page"><p>promise</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getcurrentuser">getCurrentUser()</h3>
+<div class="getcurrentuser"><div class="getcurrentuser-page"><p>Gets all available info on authenticated user</p>
+</div><h5 id="methods_getcurrentuser_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="getcurrentuser-page"><p>user</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_gettoken">getToken()</h3>
+<div class="gettoken"><div class="gettoken-page"><p>Get auth token</p>
+</div><h5 id="methods_gettoken_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="gettoken-page"><p>token</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_isadmin">isAdmin()</h3>
+<div class="isadmin"><div class="isadmin-page"><p>Check if a user is an admin</p>
+</div><h5 id="methods_isadmin_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="isadmin-page"><p>isAdmin</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_isinstructor">isInstructor()</h3>
+<div class="isinstructor"><div class="isinstructor-page"><p>Check if a user is an instructor, this will also return true if the user is an admin</p>
+</div><h5 id="methods_isinstructor_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="isinstructor-page"><p>isInstructor</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_isloggedin">isLoggedIn()</h3>
+<div class="isloggedin"><div class="isloggedin-page"><p>Check if a user is logged in</p>
+</div><h5 id="methods_isloggedin_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="isloggedin-page"><p>isLoggedIn</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_isloggedinasync">isLoggedInAsync()</h3>
+<div class="isloggedinasync"><div class="isloggedinasync-page"><p>Waits for currentUser to resolve before checking if user is logged in</p>
+</div></div>
+</li>
+<li><h3 id="methods_login">login(user, callback)</h3>
+<div class="login"><div class="login-page"><p>Authenticate user and save token</p>
+</div><h5 id="methods_login_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>user</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="login-page"><p>login info</p>
+</div><table><thead><tr><th>Property</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>username</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="login-page"><p>username of the user</p>
+</div></td></tr><tr><td>password</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="login-page"><p>password of the user</p>
+</div></td></tr></tbody></table></td></tr><tr><td>callback <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="login-page"><p>Called when user logged in</p>
+</div></td></tr></tbody></table><h5 id="methods_login_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">promise</a></td><td><div class="login-page"><p>promise</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_logout">logout()</h3>
+<div class="logout"><div class="logout-page"><p>Delete access token and user info</p>
+</div></div>
+</li>
+</ul>
+</div>
+</div>

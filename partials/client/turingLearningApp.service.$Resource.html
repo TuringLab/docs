@@ -1,0 +1,53 @@
+<h1><code ng:non-bindable="">$Resource</code>
+<div><span class="hint">service in module <code ng:non-bindable="">turingLearningApp</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="turinglearningapp-service-page turinglearningapp-service--resource-page"><p>The <code>$Resource</code> service returns an extension of the <code>$resource</code> service which is used to communicate with a RESTful endpoint</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="https://docs.angularjs.org/api/ngResource/service/$resource">$resource</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_get">get(params, callback)</h3>
+<div class="get"><div class="method-page method-get-page"><p>Get a single resource from a RESTful endpoint</p>
+</div><h5 id="methods_get_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>params</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="method-page method-get-page"><p>parameters to define which resource to access</p>
+</div><table><thead><tr><th>Property</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>id</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="method-page method-get-page"><p>id of resource being returned</p>
+</div></td></tr></tbody></table></td></tr><tr><td>callback <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="method-page method-get-page"><p>called when resource is returned</p>
+</div></td></tr></tbody></table><h5 id="methods_get_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="method-page method-get-page"><p>resource</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_query">query(params, callback)</h3>
+<div class="query"><div class="method-page method-query-page"><p>Query a list of resources from a RESTful endpoint</p>
+</div><h5 id="methods_query_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>params</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="method-page method-query-page"><p>parameters to define which filter to apply</p>
+</div></td></tr><tr><td>callback <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="method-page method-query-page"><p>called when resources are returned</p>
+</div></td></tr></tbody></table><h5 id="methods_query_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object[]</a></td><td><div class="method-page method-query-page"><p>resources</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_$prepare">$prepare()</h3>
+<div class="$prepare"><div class="prototype-page prototype--prepare-page"><p>Prepare the <code>$Resource</code> object before saving by returning a copy of the <code>$Resource</code>. This prototype may be sued to remote certain attributes or recursive references before persisting the object. This prototype is designed to be overridden by objects which inherit from <code>$Resource</code>.</p>
+</div><h5 id="methods_$prepare_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="prototype-page prototype--prepare-page"><p>resource</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_$save">$save(params, callback, callback)</h3>
+<div class="$save"><div class="prototype-page prototype--save-page"><p>Save the <code>$Resource</code> by either creating a new resource or updating an existing resource</p>
+</div><h5 id="methods_$save_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>params</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="prototype-page prototype--save-page"><p>save parameters</p>
+</div></td></tr><tr><td>callback <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="prototype-page prototype--save-page"><p>success callback</p>
+</div></td></tr><tr><td>callback <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="prototype-page prototype--save-page"><p>error callback</p>
+</div></td></tr></tbody></table><h5 id="methods_$save_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="prototype-page prototype--save-page"><p>resource</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_$transform">$transform()</h3>
+<div class="$transform"><div class="prototype-page prototype--transform-page"><p>Transform the <code>$Resource</code> object when data is returned from the RESTful endpoint. This prototype could be used to add circular references or associate other resources. This prototype is designed to be overridden by objects which inherit from <code>$Resource</code>.</p>
+</div></div>
+</li>
+<li><h3 id="methods_tojson">toJSON()</h3>
+<div class="tojson"><div class="prototype-page prototype-tojson-page"><p>Convert the <code>$Resource</code> to JSON and delete promises</p>
+</div><h5 id="methods_tojson_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="prototype-page prototype-tojson-page"><p>resource</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>
